@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - name: Test
+        run: ci/unit-test-app.sh
       - name: Clone-down
         uses: actions/checkout@v3 
+    
